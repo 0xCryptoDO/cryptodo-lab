@@ -1,0 +1,83 @@
+{
+  "title": "Welcome to CryptoDo Build2Earn Quests!",
+  "yourPoints": "Your points: ",
+  "description": {
+    "title": "We have launched this program to teach users how to create web3 applications without programming skills using CryptoDo, as well as to reward builders with CDO tokens for completing quests. ",
+    "descr": "By completing CryptoDo B2E quests, you will earn points and climb the leaderboard. A total of $100,000 in CDO tokens will be distributed among participants according to this table:",
+    "descr1": "In addition, all participants who score 200+ points but do not make it to the top 1000 will receive a guaranteed 20 CDO.",
+    "descr2": "Participate in CryptoDo quests below, become an expert in the web3 space, and earn rewards!"
+  },
+  "rewards": "Top 1 get 5000 CDO\nTop 3 get 3000 CDO\nTop 10 get 1000 CDO\nTop 30 get 600 CDO\nTop 60 get 400 CDO\nTop 100 get 300 CDO\nTop 300 get 150 CDO\nTop 500 get 100 CDO\nTop 1000 get 50 CDO",
+  "quests": {
+    "title": "Quests",
+    "contracts": {
+      "ERC20_CONTRACT": {
+        "title": "Create ERC20 or deflationary token - <0>guide</0>",
+        "descr": "ERC20 is a widely adopted standard for creating fungible tokens on the Ethereum blockchain. ERC20 tokens are used for a variety of purposes, such as crowdfunding, payments, or simply as a means of exchanging value, and can be traded on various cryptocurrency exchanges."
+      },
+      "ERC20_DEF_CONTRACT": {
+        "title": "Create ERC20 or deflationary token",
+        "descr": "ERC20 is a widely adopted standard for creating fungible tokens on the Ethereum blockchain. ERC20 tokens are used for a variety of purposes, such as crowdfunding, payments, or simply as a means of exchanging value, and can be traded on various cryptocurrency exchanges."
+      },
+      "ICO_CONTRACT": {
+        "title": "Create ICO (Crowdsale) contract - <0>guide</0>",
+        "descr": "A crowdsale smart contract (ICO) is a way to sell tokens of your project to investors for another cryptocurrency, with certain conditions such as the price, lock-up period, and others, encoded in a self-executing code on a blockchain network."
+      },
+      "ERC721_CONTRACT": {
+        "title": "Create NFT collection contract - <0>guide</0>",
+        "descr": "NFT collections (ERC721) are sets of non-fungible tokens, meaning that each token is unique and cannot be exchanged for another token of equal value. These tokens are used in various applications, such as digital art, gaming, and collectibles, where their distinctiveness and limited supply add value and appeal to collectors and enthusiasts."
+      },
+      "DAO_CONTRACT": {
+        "title": "Create DAO with 2+ partners - <0>guide</0>",
+        "descr": "DAO is a decentralized organization that operates based on smart contracts, enabling members to vote and participate in decision-making without intermediaries. It is used in various contexts, such as decentralized finance, digital identity, and supply chain management, to provide transparency, security, and efficiency to a distributed ecosystem."
+      },
+      "LOTTERY_CONTRACT": {
+        "title": "Create blockchain lottery - <0>guide</0>",
+        "descr": "A blockchain lottery on a smart contract is a self-executing lottery on a blockchain network, enabling participants to purchase tickets using cryptocurrency and ensuring fairness and transparency in the distribution of rewards. It is used for various purposes, such as fundraising, gaming, or incentivizing behaviors."
+      },
+      "AIRDROP_CONTRACT": {
+        "title": "Create AirDrop smart contract",
+        "descr": "Multisender/AirDrop is a smart contract that helps to send tokens or ETH/BNB/Matic and other currencies to multiple recipients with just one simple transaction. Moreover, by using the AirDrop contract, you can save up to 80% on network fees when distributing cryptocurrencies to wallets. "
+      },
+      "MULTISIG_CONTRACT": {
+        "title": "Create Multisig smart contract",
+        "descr": "A multisig contract is a specialized type of smart contract that enables a group of owners to jointly control and manage assets or function execution. It is ideal for organizations and communities that require collective decision-making. Each owner holds a certain 'weight' of vote, and a quorum is needed to carry out any function."
+      },
+      "VESTING_CONTRACT": {
+        "title": "Create Vesting smart contract",
+        "descr": "Lock and Vesting contracts are specific types of smart contracts used to lock tokens and subsequently unlock them over a scheduled period. This technique is vital for controlling token distribution among various stakeholders, establishing aligned incentives, and ensuring commitment to a project over the long term."
+      }
+    }
+  },
+  "ref": "Referral",
+  "refDescr": "Get 20% of your friends points",
+  "social": {
+    "twitter": {
+      "title": "Tweet about the Build2Earn CryptoDo program and get an extra <0></0> to your balance",
+      "alreadyCompleted": "You have already twitted the post",
+      "action": "Tweet",
+      "points": "50 points",
+      "placeholder": "Enter link to your tweet",
+      "checkTweet": "Check tweet",
+      "tweetSucceed": "You have recevied 50 points for tweet!"
+    },
+    "telegram": {
+      "title": "Go to the Telegram bot and subscribe to CryptoDo social media for <0></0>",
+      "action": "Subscribe",
+      "points": "80 points",
+      "alreadyCompleted": "You have already subscribed to all CryptoDo social media"
+    }
+  },
+  "conditions": "Read more...",
+  "points_one": "{{count}} Point",
+  "points": "{{count}} Points",
+  "pointsWithoutCount": "Points",
+  "bug": {
+    "title": "Bug bounty",
+    "descr1": "Find critical errors and get extra points!",
+    "descr2": "Fill in the form to tell us about CryptoDo bugs and problems"
+  },
+  "leaderboard": {
+    "title": "Leaderboard"
+  }
+}

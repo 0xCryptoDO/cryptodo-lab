@@ -1,0 +1,8 @@
+{
+  "title": "Profile",
+  "referral": "Referral links",
+  "description": "A small description of the features and benefits of a referral link",
+  "used": "Used the link:",
+  "peoples": "{{count}} people",
+  "earned": "Earned from referral:"
+}

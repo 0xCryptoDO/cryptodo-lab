@@ -1,0 +1,98 @@
+cache:
+  paths:
+    - node_modules/
+    - .yarn
+
+before_script:
+  - apt-get update -qq && apt-get install
+
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+deploy-staging:
+  stage: deploy
+  environment:
+    name: staging
+    url: https://lab.staging.cryptodo.app
+  variables:
+    DOCKER_TLS_CERTDIR: '/certs'
+  image: kroniak/ssh-client:latest
+  services:
+    - kroniak/ssh-client:latest
+  script:
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - echo "$SSH_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - sed -i "s#__NODE_ENV__#development#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_IS_TESTNET__#true#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_INFURA_ID__#$NEXT_PUBLIC_INFURA_ID#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_USERS_API_URL__#$NEXT_PUBLIC_USERS_API_URL#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_CONTRACTS_API_URL__#$NEXT_PUBLIC_CONTRACTS_API_URL#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_BILLING_API_URL__#$NEXT_PUBLIC_BILLING_API_URL#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_IS_TESTNET_VERIFICATION_ENABLED__#$NEXT_PUBLIC_IS_TESTNET_VERIFICATION_ENABLED#" .env.production
+    - ssh $STAGING_SSH_HOST 'sudo rm -r ~/cryptodo/staging/cryptodo-lab'
+    - scp -r "$PWD" $STAGING_SSH_HOST:~/cryptodo/staging
+    - ssh $STAGING_SSH_HOST 'cd ~/cryptodo/staging/cryptodo-lab && sudo docker-compose --file docker-compose.staging.yml up --force-recreate --build -d'
+  only:
+    - staging
+
+deploy-production:
+  stage: deploy
+  environment:
+    name: production
+    url: https://lab.cryptodo.app
+  variables:
+    DOCKER_TLS_CERTDIR: '/certs'
+  image: kroniak/ssh-client:latest
+  services:
+    - kroniak/ssh-client:latest
+  script:
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - echo "$SSH_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - sed -i "s#__NODE_ENV__#production#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_IS_TESTNET__#false#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_INFURA_ID__#$NEXT_PUBLIC_INFURA_ID#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_USERS_API_URL__#$NEXT_PUBLIC_USERS_API_URL#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_CONTRACTS_API_URL__#$NEXT_PUBLIC_CONTRACTS_API_URL#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_BILLING_API_URL__#$NEXT_PUBLIC_BILLING_API_URL#" .env.production
+    - sed -i "s#__NEXT_PUBLIC_IS_TESTNET_VERIFICATION_ENABLED__#$NEXT_PUBLIC_IS_TESTNET_VERIFICATION_ENABLED#" .env.production
+    - ssh $PRODUCTION_SSH_HOST 'sudo rm -r ~/cryptodo/production/cryptodo-lab'
+    - scp -r "$PWD" $PRODUCTION_SSH_HOST:~/cryptodo/production
+    - ssh $PRODUCTION_SSH_HOST 'cd ~/cryptodo/production/cryptodo-lab && sudo docker-compose --file docker-compose.production.yml up --force-recreate --build -d'
+  only:
+    - main
+
+lint:
+  image: node:latest
+  before_script:
+    - yarn config set cache-folder .yarn
+    - yarn install
+  stage: lint
+  script:
+    - yarn lint
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+test:
+ image: node:latest
+ stage: test
+ script:
+   - yarn test
+ rules:
+   - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+build:
+  image: node:latest
+  stage: build
+  script:
+    - yarn build
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"

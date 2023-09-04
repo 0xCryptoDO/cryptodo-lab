@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  cryptodo-lab-production:
+    restart: always
+    build: .
+    ports:
+    - 3300:3000
+    networks:
+      - cryptodo-lab-production
+
+networks:
+  cryptodo-lab-production:
+    external: true

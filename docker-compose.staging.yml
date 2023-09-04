@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  cryptodo-lab-staging:
+    restart: always
+    build: .
+    ports:
+    - 3400:3000
+    networks:
+      - cryptodo-lab-staging
+
+networks:
+  cryptodo-lab-staging:
+    external: true

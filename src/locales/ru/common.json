@@ -1,0 +1,178 @@
+{
+  "connectWallet": "Подключить кошелек",
+  "navigation": {
+    "exit": "Выход",
+    "smartContracts": "Смарт-контракты",
+    "documentation": "Документация",
+    "createContract": "Создать контракт",
+    "profile": "Профиль",
+    "DOCS": "Академия",
+    "dappsGallery": "Агрегатор Dapps",
+    "quests": "Квесты",
+    "openNav": "Открыть навигацию",
+    "closeNav": "Закрыть навигацию",
+    "collapseSidebar": "Свернуть панель"
+  },
+  "networks": {
+    "all": "Все сети",
+    "mainnet": "Mainnet",
+    "testnet": "Testnet",
+    "unsupportedMainnet": "{{network}} сеть еще не поддерживает mainnet"
+  },
+  "statuses": {
+    "all": "Все статусы",
+    "unpaid": "Не оплачен",
+    "waitingForDeploy": "Ожидает деплоя",
+    "waitingForPayment": "Ожидает оплаты",
+    "deployed": "Задеплоено",
+    "aiGeneration": {
+      "title": "AI генерация",
+      "message": "AI функция генерируется..."
+    },
+    "compilation": {
+      "title": "Компиляция",
+      "message": "Контракт компилируется..."
+    },
+    "deploy": {
+      "title": "Деплой",
+      "message": "Ожидаем деплоя контракта..."
+    },
+    "verification": {
+      "title": "Верификация",
+      "message": "Ожидаем верификации транзакции..."
+    },
+    "rejectNetwork":{
+      "title": "Транзакция была отменена",
+      "message": "Смена сети была отклонена пользователем"
+    },
+    "error": {
+      "title": "Ошибка",
+      "message": "Непредвиденная ошибка сервера"
+    },
+    "waitingForPrevStage": "Ожидаем завершения предыдущего шага",
+    "ready": "Готово"
+  },
+  "errors": {
+    "signingRejected": "Вы отклонили подпись",
+    "insufficientFunds": "Недостаточно средств на кошельке для проведения транзакции",
+    "unexpected": "Непредвиденная ошибка сервера. Попробуйте еще раз",
+    "name must be longer than or equal to 5 characters": "Имя токена должно содержать не менее 5 символов",
+    "symbol must be longer than or equal to 3 characters": "Тикер токена должен содержать не менее 3 символов",
+    "unlockPercentageSum": "Пожалуйста, измените проценты разблокировки, чтобы сумма равнялась 100",
+    "unlockDatesUnique": "Пожалуйста, измените даты разблокировки на уникальные",
+    "lotterySumOfWinners": "Пожалуйста, измените проценты победителей, чтобы сумма равнялась 100",
+    "lotterySumOfRewards": "Пожалуйста, измените проценты наград, чтобы сумма равнялась 100"
+  },
+  "copied": "Скопировано",
+  "search": "Поиск",
+  "created": "Создан",
+  "network": "Сеть",
+  "close": "Закрыть",
+  "type": "Тип",
+  "totalSupply": "Общее предложение",
+  "owner": "Владелец",
+  "create": "Создать",
+  "exit": "Выйти",
+  "viewInExplorer": "Просмотр в Explorer",
+  "viewTransactionInExplorer": "Просмотр транзакции в Explorer",
+  "decimals": "Десятичные",
+  "chooseWallet": "Выберите кошелек",
+  "contractIsNotDeployed": "Контракт ещё не задеплоен",
+  "walletNotConnected": "Подключите кошелёк для продолжения работы",
+  "dappsGallerySoon": "Агрегатор Dapps (Скоро)",
+  "chainIsNotValid": "Смените сеть на BSC Testnet для продолжения работы",
+  "connectingWallet": "Подключаем кошелек...",
+  "signingMessage": "Ожидаем подпись...",
+  "txPending": "Транзакция в процессе...",
+  "status": "Статус",
+  "inTheMaking": "Создание контракта в процессе...",
+  "contractCreated": "Контракт успешно создан!",
+  "excellent": "Супер!",
+  "addressCopied": "Адрес скопирован",
+  "soon": "(Скоро)",
+  "deployConfirmationDialog": {
+    "title": "Подтверждение",
+    "message": "Вы уверены, что хотите продолжить? После этого вы не можете изменить данные контракта",
+    "button": "Продолжить"
+  },
+  "fieldErrors": {
+    "noSelectedContractFunctions": "Пожалуйста выберите хотя бы одну функцию контракта",
+    "url": "Неверный url",
+    "required": "Обязательное поле",
+    "upperCase": "Только символы в верхнем регистре",
+    "enterNumber": "Введите числовое значение",
+    "minLength": "Минимальное количество символов - {{min}}",
+    "maxLength": "Максимальное количество символов - {{max}}",
+    "min": "Значение должно быть больше или равно {{min}}",
+    "moreThan": "Значение должно быть больше {{min}}",
+    "max": "Значение должно быть меньше или равно {{max}}",
+    "positive": "Число должно быть больше 0",
+    "onlyEnglishCharacter": "Только символы латинского алфавита",
+    "onlyEthAddress": "Только ethereum адрес",
+    "isContractAddress": "Неверный адрес контракта",
+    "numberType": "В поле должно быть введено число",
+    "numberPercent": "В поле должно быть введено от 0.001 до 100 (процентов)",
+    "errorDate": "Не может быть меньше текущей даты",
+    "errorEndDate": "Должно быть после даты начала",
+    "elementExist": "Элемент с этим адресом уже существует",
+    "ethAddress": "Значение должно быть адресом ethereum",
+    "invalidAddress": "Неверный адрес",
+    "integer": "В поле должно быть введено целое число",
+    "sumOfFields": "Сумма полей должна равняться 100 %",
+    "wrongTokenContract": "Неверный адрес контракта токена"
+  },
+  "contractTypes": {
+    "all": "Все типы",
+    "ERC20_CONTRACT": "Токен (ERC-20)",
+    "ERC20_DEF_CONTRACT": "Токен дефляционный (ERC-20)",
+    "ICO_CONTRACT": "Краудсейл (ICO)",
+    "ERC721_CONTRACT": "НФТ коллекция ERC-721",
+    "DAO_CONTRACT": "DAO",
+    "LOTTERY_CONTRACT": "Блокчейн-лотерея",
+    "AIRDROP_CONTRACT": "AirDrop",
+    "MULTISIG_CONTRACT": "Мультиподпись",
+    "VESTING_CONTRACT": "Вестинг",
+    "STAKING_CONTRACT": "Стeйкинг"
+  },
+  "contractDescription": {
+    "ERC20_CONTRACT": "ERC-20",
+    "ERC20_DEF_CONTRACT": "Дефляционный ERC-20",
+    "ICO_CONTRACT": "ICO",
+    "ERC721_CONTRACT": "ERC-721",
+    "DAO_CONTRACT": "DAO",
+    "LOTTERY_CONTRACT": "Лотерея",
+    "AIRDROP_CONTRACT": "AirDrop",
+    "MULTISIG_CONTRACT": "Мультиподпись",
+    "VESTING_CONTRACT": "Вестинг",
+    "STAKING_CONTRACT": "Стeйкинг"
+  },
+  "approve": "Подтвердить",
+  "pay": "Оплатить",
+  "deploy": "Задеплоить",
+  "signMessageDialog": {
+    "title": "Подпись сообщения",
+    "message": "Вы переключились на другой аккаунт. Пожалуйста, подпишите новое сообщение используя свой кошелек",
+    "authMessage": "Необходимо авторизоваться. Пожалуйста, подпишите новое сообщение используя свой кошелек",
+    "button": "Подписать"
+  },
+  "lockup": "Период заморозки",
+  "minStake": "Минимальный стейк",
+  "maxStake": "Максимальный стейк",
+  "isEarlyWithdrawal": "Доступен ранний вывод",
+  "yes": "Да",
+  "no": "Нет",
+  "upTo": "До",
+  "reward": "Доходность",
+  "price": "Цена",
+  "next": "Далее",
+  "routes": {
+    "main": "Главная",
+    "createContract": "Создание контрактов",
+    "dashboard": "Дашбоард",
+    "quests": "Квесты"
+  },
+  "axiosErrors": {
+    "unauthorized": "Сессия истекла"
+  },
+  "showMore": "Показать еще"
+}

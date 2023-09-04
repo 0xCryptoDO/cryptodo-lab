@@ -1,0 +1,9 @@
+export { CreateErc20 } from './CreateErc20/createErc20.component';
+export { CreateIco } from './CreateIco/createIco.component';
+export { CreateAirDrop } from './CreateAirDrop/createAirDrop.component';
+export { CreateDao } from './CreateDao/createDao.component';
+export { CreateErc721 } from './CreateErc721/createErc721.component';
+export { CreateErc20Def } from './CreateErc20Def/createErc20Def.component';
+export { CreateMultisig } from './CreateMultisig/createMultisig.component';
+export { CreateLottery } from './CreateLottery/createLottery.component';
+export { CreateVesting } from './CreateVesting/createVesting.component';

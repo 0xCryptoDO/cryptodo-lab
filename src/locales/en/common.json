@@ -1,0 +1,178 @@
+{
+  "connectWallet": "Connect wallet",
+  "navigation": {
+    "exit": "Log out",
+    "smartContracts": "Smart Contracts",
+    "documentation": "Documentation",
+    "createContract": "Create Contract",
+    "profile": "Profile",
+    "DOCS": "Academy",
+    "dappsGallery": "Dapps Gallery",
+    "quests": "Quests",
+    "openNav": "Open navigation",
+    "closeNav": "Close navigation",
+    "collapseSidebar": "Collapse sidebar"
+  },
+  "networks": {
+    "all": "All networks",
+    "mainnet": "Mainnet",
+    "testnet": "Testnet",
+     "unsupportedMainnet": "{{network}} network does not yet support mainnet"
+  },
+  "statuses": {
+    "all": "All statuses",
+    "unpaid": "Unpaid",
+    "waitingForDeploy": "Waiting for deploy",
+    "waitingForPayment": "Waiting for payment",
+    "deployed": "Deployed",
+    "aiGeneration": {
+      "title": "AI generation",
+      "message": "Please wait, the AI function generating..."
+    },
+    "compilation": {
+      "title": "Compilation",
+      "message": "Please wait, the smart contract is compiling..."
+    },
+    "deploy": {
+      "title": "Deploy",
+      "message": "Please wait, the smart contract is deploying..."
+    },
+    "error": {
+      "title": "Error",
+      "message": "An unexpected server error occurred"
+    },
+    "rejectNetwork":{
+      "title": "Transaction was declined",
+      "message": "User rejected switching network"
+    },
+    "verification": {
+      "title": "Verification",
+      "message": "Please wait, the transaction is verifying..."
+    },
+    "waitingForPrevStage": "Waiting for the completion of the previous stage",
+    "ready": "Ready"
+  },
+  "errors": {
+    "signingRejected": "You rejected the signature",
+    "insufficientFunds": "Insufficient funds for transaction execution",
+    "unexpected": "An unexpected server error occurred. Please, try again",
+    "name must be longer than or equal to 5 characters": "Token name must be longer than or equal to 5 characters",
+    "symbol must be longer than or equal to 3 characters": "Symbol must be longer than or equal to 3 characters",
+    "unlockPercentageSum": "Please change the unlock percentages so that the amount equals 100",
+    "unlockDatesUnique": "Please change the unlock dates to unique",
+    "lotterySumOfWinners": "Please change the percentage of winners so that the sum equals 100",
+    "lotterySumOfRewards": "Please change the award percentages so that the sum equals 100"
+  },
+  "copied": "Copied",
+  "search": "Search",
+  "created": "Created",
+  "network": "Network",
+  "close": "Close",
+  "type": "Type",
+  "exit": "Log out",
+  "totalSupply": "Total supply",
+  "owner": "Owner",
+  "create": "Create",
+  "viewInExplorer": "View in explorer",
+  "viewTransactionInExplorer": "View transaction in explorer",
+  "decimals": "Decimals",
+  "chooseWallet": "Choose wallet",
+  "contractIsNotDeployed": "Contract is not deployed yet",
+  "walletNotConnected": "Please connect wallet in order for app to work",
+  "dappsGallerySoon": "Dapps Gallery (Soon)",
+  "chainIsNotValid": "Please switch network to BSC Testnet",
+  "connectingWallet": "Connecting wallet...",
+  "signingMessage": "Waiting for a signature...",
+  "txPending": "Transaction is in progress...",
+  "status": "Status",
+  "inTheMaking": "Smart contract in the making...",
+  "contractCreated": "Success! Your contract has been successfully created!",
+  "excellent": "Excellent!",
+  "addressCopied": "Address copied",
+  "soon": "(Soon)",
+  "deployConfirmationDialog": {
+    "title": "Confirmation",
+    "message": "Are you sure you want to continue? After that, you cannot change the contract details",
+    "button": "Proceed"
+  },
+  "fieldErrors": {
+    "noSelectedContractFunctions": "Please select at least one contract function",
+    "positive": "Number should be positive",
+    "onlyEnglishCharacter": "Only english letters",
+    "onlyEthAddress": "Only ethereum address",
+    "isContractAddress": "Wrong contract address",
+    "url": "Must be a url",
+    "required": "Required field",
+    "enterNumber": "Enter a valid number",
+    "upperCase": "Only uppercase character",
+    "minLength": "Minimum number of characters - {{min}}",
+    "maxLength": "Maximum number of characters - {{max}}",
+    "min": "Value must be greater or equal to {{min}}",
+    "moreThan": "Value must be greater than {{min}}",
+    "max": "Value must be lower or equal to {{max}}",
+    "numberType": "A number must be entered in the field",
+    "numberPercent": "The field must be entered from 0.001 to 100 (percent)",
+    "errorDate": "Cant be less current date",
+    "errorEndDate": "Must be after the start date",
+    "elementExist": "The element with this address already exists",
+    "ethAddress": "The value must be an ethereum address",
+    "invalidAddress": "Invalid address",
+    "integer": "An integer must be entered in the field",
+    "sumOfFields": "The sum of the fields must equal 100%",
+    "wrongTokenContract": "Wrong token contract address"
+  },
+  "contractTypes": {
+    "all": "All types",
+    "ERC20_CONTRACT": "Token (ERC-20)",
+    "ERC20_DEF_CONTRACT": "Token (ERC-20 deflationary)",
+    "ICO_CONTRACT": "Crowdsale (ICO)",
+    "ERC721_CONTRACT": "NFT collection (ERC-721)",
+    "DAO_CONTRACT": "DAO",
+    "LOTTERY_CONTRACT": "Blockchain lottery",
+    "AIRDROP_CONTRACT": "AirDrop",
+    "MULTISIG_CONTRACT": "Multisig",
+    "VESTING_CONTRACT": "Vesting",
+    "STAKING_CONTRACT": "Staking"
+  },
+  "contractDescription": {
+    "ERC20_CONTRACT": "ERC-20",
+    "ERC20_DEF_CONTRACT": "ERC-20 deflationary",
+    "ICO_CONTRACT": "ICO",
+    "ERC721_CONTRACT": "ERC-721",
+    "DAO_CONTRACT": "DAO",
+    "LOTTERY_CONTRACT": "Lottery",
+    "AIRDROP_CONTRACT": "AirDrop",
+    "MULTISIG_CONTRACT": "Multisig",
+    "VESTING_CONTRACT": "Vesting",
+    "STAKING_CONTRACT": "Staking"
+  },
+  "approve": "Approve",
+  "pay": "Pay",
+  "deploy": "Deploy",
+  "signMessageDialog": {
+    "title": "Sign message",
+    "message": "You switched to another account. Please, sign a new message using your wallet",
+    "authMessage": "Auth required. Please, sign a new message using your wallet",
+    "button": "Sign"
+  },
+  "lockup": "Lockup period",
+  "minStake": "Min stake",
+  "maxStake": "Max stake",
+  "yes": "Yes",
+  "no": "No",
+  "upTo": "Up to",
+  "reward": "Reward",
+  "isEarlyWithdrawal": "Is early withdrawal available",
+  "price": "Price",
+  "next": "Next",
+  "routes": {
+    "main": "Main",
+    "createContract": "Create contract",
+    "dashboard": "Dashboard",
+    "quests": "Quests"
+  },
+  "axiosErrors": {
+    "unauthorized": "Unauthorized"
+  },
+  "showMore": "Show more"
+}

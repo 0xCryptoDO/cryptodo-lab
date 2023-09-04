@@ -1,0 +1,3 @@
+import { NETWORKS_WITH_DISABLED_VERIFICARION, NETWORKS_WITH_ENABLED_TESTNET_VERIFICATION, Network } from "@cryptodo/contracts";
+
+export const checkIfVerificationEnabled = (testnet?: boolean, network?: Network) => (!testnet || process.env.NEXT_PUBLIC_IS_TESTNET_VERIFICATION_ENABLED || (network && NETWORKS_WITH_ENABLED_TESTNET_VERIFICATION.includes(network))) && (network && !NETWORKS_WITH_DISABLED_VERIFICARION.includes(network))

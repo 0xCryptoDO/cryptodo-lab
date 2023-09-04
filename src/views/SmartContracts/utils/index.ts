@@ -1,0 +1,1 @@
+export { filterContracts } from './filterContracts';

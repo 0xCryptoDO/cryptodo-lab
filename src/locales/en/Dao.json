@@ -1,0 +1,29 @@
+{
+  "title": "DefilabDao",
+  "aboutTitle": "About us",
+  "aboutDescription": "Our organization is part of a decentralized future. Join us in this terrific journey!",
+  "statisticsTitle": "On-Chain Statistics",
+  "membersTitle": "DAO Members",
+  "membersAddress": "Address",
+  "membersBalance": "GT Balance",
+  "createDaoTitle": "Choose a name and symbol for the DAO, GT will get the same parameters. Distribute GT between addresses that will participate in voting",
+  "createDao": "Create a DAO",
+  "tabs": {
+    "balance": "Balance",
+    "members": "Members",
+    "features": "Features",
+    "lp": "LP Token",
+    "voting": "Voting"
+  },
+  "votingTitle": "Voting list",
+  "createVoting": "Create Voting",
+  "popoverInfo": {
+    "dao": {
+      "name": "The DAO name is a unique title for your decentralized autonomous organization that helps users identify and distinguish it among other DAOs. Typically, the DAO name reflects the purpose or main idea of your organization.",
+      "symbol": "The DAO symbol is a short abbreviation consisting of a few characters (usually 3-5) that represents your DAO on the market and in wallets. The symbol serves as a simplified identifier for your organization.",
+      "partnerAddress": "Enter the wallet address of your DAO's partner. This address will be linked to the management token (GT) distribution for your DAO's partner, allowing them to participate in decision-making.",
+      "gtAmount": "Enter the number of GT tokens for this partner of your DAO. GT is the governance token of your DAO. Decisions will be made based on the GT token shares of all DAO participants, ensuring a fair and decentralized decision-making process.",
+      "quorum": "The quorum is the percentage of votes in the DAO required to make a decision. By setting a quorum, you can ensure that a certain level of consensus is reached before a decision is approved, promoting transparency and collaboration within the DAO."
+    }
+  }
+}

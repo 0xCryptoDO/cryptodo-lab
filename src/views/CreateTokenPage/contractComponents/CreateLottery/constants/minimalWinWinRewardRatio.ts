@@ -1,0 +1,1 @@
+export const MINIMAL_WINWIN_REWARD_RATIO = 0.55;

@@ -1,0 +1,10 @@
+export { AvaxCoinIcon } from './avax-coin';
+export { MaticCoinIcon } from './matic-coin';
+export { EthereumCoinIcon } from './ethereum-coin';
+export { TetherLogoIcon } from './tether';
+export { BinanceUsdLogoIcon } from './binance-usd';
+export { BinanceUsdLogoBgIcon } from './binance-usd-bg';
+export { CryptoDoLogoIcon } from './crypto-do';
+export { CryptoDoLogoBgIcon } from './crypto-do-bg';
+export { BinanceCoinLogoIcon } from './binance-coin';
+export { OktCoinIcon } from './okt-coin';

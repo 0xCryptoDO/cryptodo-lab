@@ -1,0 +1,36 @@
+{
+  "title": "Smart Contracts",
+  "post": "Post to Mainnet",
+  "buttonNext": "Next",
+  "buttonPrev": "Prev",
+  "createContract": "Create contract",
+  "noContract": {
+    "title": "You don't have any smart contract yet",
+    "descr": "To get started, create your first smart contract",
+    "create": "Сreate"
+  },
+  "create": {
+    "title": "Create Web3 app",
+    "blockchain": "Blockchain",
+    "type": "Contract type",
+    "choose": "Choose contract type",
+    "submit": "Proceed",
+    "soon": "soon"
+  },
+  "typeDescriptions": {
+    "ERC20_CONTRACT": "ERC20 is a widely adopted standard for creating fungible tokens on the Ethereum blockchain. ERC20 tokens are used for a variety of purposes, such as crowdfunding, payments, or simply as a means of exchanging value, and can be traded on various cryptocurrency exchanges.",
+    "ERC20_DEF_CONTRACT": "ERC20 is a widely adopted standard for creating fungible tokens on the Ethereum blockchain. ERC20 tokens are used for a variety of purposes, such as crowdfunding, payments, or simply as a means of exchanging value, and can be traded on various cryptocurrency exchanges.",
+    "ICO_CONTRACT": "A crowdsale smart contract (ICO) is a way to sell tokens of your project to investors for another cryptocurrency, with certain conditions such as the price, lock-up period, and others, encoded in a self-executing code on a blockchain network.",
+    "ERC721_CONTRACT": "NFT collections (ERC721) are sets of non-fungible tokens, meaning that each token is unique and cannot be exchanged for another token of equal value. These tokens are used in various applications, such as digital art, gaming, and collectibles, where their distinctiveness and limited supply add value and appeal to collectors and enthusiasts.",
+    "DAO_CONTRACT": "DAO is a decentralized organization that operates based on smart contracts, enabling members to vote and participate in decision-making without intermediaries. It is used in various contexts, such as decentralized finance, digital identity, and supply chain management, to provide transparency, security, and efficiency to a distributed ecosystem.",
+    "LOTTERY_CONTRACT": "A blockchain lottery on a smart contract is a self-executing lottery on a blockchain network, enabling participants to purchase tickets using cryptocurrency and ensuring fairness and transparency in the distribution of rewards. It is used for various purposes, such as fundraising, gaming, or incentivizing behaviors.",
+    "AIRDROP_CONTRACT": "Multisender/AirDrop is a smart contract that helps to send tokens or ETH/BNB/Matic and other currencies to multiple recipients with just one simple transaction. Moreover, by using the AirDrop contract, you can save up to 80% on network fees when distributing cryptocurrencies to wallets.",
+    "MULTISIG_CONTRACT": "A multisig contract is a specialized type of smart contract that enables a group of owners to jointly control and manage assets or function execution. It is ideal for organizations and communities that require collective decision-making. Each owner holds a certain 'weight' of vote, and a quorum is needed to carry out any function.",
+    "VESTING_CONTRACT": "Lock and Vesting contracts are specific types of smart contracts used to lock tokens and subsequently unlock them over a scheduled period. This technique is vital for controlling token distribution among various stakeholders, establishing aligned incentives, and ensuring commitment to a project over the long term."
+  },
+  "meta": {
+    "contractSourceCode": "Contract Source Code",
+    "contractAbi": "Contract ABI"
+  },
+  "moreInfo": "More information"
+}
